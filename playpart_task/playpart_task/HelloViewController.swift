@@ -9,6 +9,15 @@ import UIKit
 
 class HelloViewController: UIViewController {
 
+   
+    @IBAction func logOutButton(_ sender: Any) {
+        print("touch")
+        if
+            let navController = self.navigationController, let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController{
+            navController.pushViewController(viewController, animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         let label = UILabel(frame: CGRect( x: 157, y: 423, width: 100, height: 50))
         label.text = "Hello World!"
@@ -16,6 +25,7 @@ class HelloViewController: UIViewController {
         self.view.addSubview(label)
         super.viewDidLoad()
       //  self.navigationController = label
+        
 
 }
     

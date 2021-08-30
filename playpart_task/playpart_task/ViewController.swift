@@ -54,6 +54,7 @@ class ViewController: UIViewController {
             return false
     }
     
+    
     func isValidPassword(password:String?) -> Bool {
         guard password != nil else {
             return false }
